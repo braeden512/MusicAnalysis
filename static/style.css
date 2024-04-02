@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('musicnotes.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family:sans-serif;
+}
+
+#searched_for{
+    font-size: 20px;
+    color:gray;
+}
+
+#artist_found{
+    font-size: 30px;
+    color:rgb(68, 68, 68);
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 25px;
+    color:gray;
+}
+
+#main_title{
+    font-size: 20px;
+    text-align: center;
+}
+
+#artist_name{
+    font-size: 20px;
+    text-align:center;
+}
+
+#submit_button{
+    font-size: 20px;
+    text-align:center;
+}
+
+#outer_submit{
+    font-size: 20px;
+    text-align:center;
+}
+
+#request_artist{
+    font-size: 20px;
+    text-align:center;
+}
+
+#description{
+    font-size: 15px;
+    text-align:center;
+    color:rgb(44, 44, 44);
+}
+
+#below_description{
+    font-size: 20px;
+    text-align:center;
+    color:rgb(93, 93, 93);
+}

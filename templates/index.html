@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    
+    <div id="main_title"><h1>Music Analysis</h1></div>
+
+    <div id="description"><h2>Find the top ten songs of any artist</h2></div>
+
+    <div id="below_description"><h3>(According to Spotify in the US)</h3></div>
+
+    <form name="get_artist" action="/" method="POST">
+        <div id="request_artist">
+            <!-- <label for = "artist_name">Artist Name:</label> -->
+            <input type="text" id = "artist_name" name="artist_name" placeholder="Enter artist name here" required
+        </div>
+
+        <!-- <br> -->
+
+        <div id="outer_submit">
+            <input type="submit" id="submit_button" value="Submit">
+        </div>
+    </form>
+
+</body>
+</html>

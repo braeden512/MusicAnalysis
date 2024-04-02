@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{{result['name']}}'s Top Songs</title>
+</head>
+<body>
+
+    <h1 id="searched_for">
+        You searched for {{artist_submission}}...
+    </h1>
+<!-- print ('{0}s top 10 songs: '.format(result["name"]))
+print ("---------------------------------------")
+for idx, song in enumerate(songs):
+print (f"{idx + 1}. {song['name']}") -->
+    <h1 id="artist_found">
+        {{result['name']}} was found! Accessing top ten songs... <br>
+        
+        ------------------------------------------------------- <br>
+    </h1>
+    <h1 id="print_songs">
+        <!-- {% set counter = 1 %}
+            {% for song in songs %}
+                {{ "{}. {}".format(counter, song['name']) }} <br>
+                {% set counter = counter + 1 %}
+            {% endfor %} -->
+        <ul>
+            {% for item in songs %}
+                <li> {{ loop.index }}. {{ item['name'] }} </li>
+            {% endfor %}
+        </ul>
+    </h1>
+
+</body>
+</html>
